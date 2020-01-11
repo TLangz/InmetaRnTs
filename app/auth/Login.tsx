@@ -14,6 +14,8 @@ const Login = () => {
                             <Text style={ styles.loginText }> Enter </Text>
                     </TouchableOpacity>
                 </View>
+                <Text onPress={ registerFunc } style={ styles.textButtons }>Sign Up</Text>
+                <Text onPress={ forgottenPassFunc } style={ styles.textButtons }>Retrieve Password</Text>
             </View>)
 };
 
@@ -35,24 +37,36 @@ const styles = StyleSheet.create({
     },
     login: {
         width: '80%',
+        marginBottom: 20
     },
     loginButton: {
-        marginTop:10,
-        paddingTop:15,
-        paddingBottom:15,
+        marginTop: 10,
+        paddingTop: 15,
+        paddingBottom: 15,
         backgroundColor: '#984B43',
-        borderRadius:10,
+        borderRadius: 5,
         borderWidth: 1,
         borderColor: '#EAC67A',
         alignItems: 'center',
     },
     loginText: {
         color: '#fff'
+    },
+    textButtons: {
+        color: '#EAC67A'
     }
 })
 
 const loginFunc = () => {
-    Alert.alert("Login in")
+    Alert.alert("Logging in")
+}
+
+const registerFunc = () => {
+    Alert.alert("Register new account")
+}
+
+const forgottenPassFunc = () => {
+    Alert.alert("Retrieve password")
 }
 
 export default Login;

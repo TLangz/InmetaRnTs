@@ -7,7 +7,7 @@ const MainNavigator = createStackNavigator({
     login: {
         screen: Login,
         navigationOptions: {
-            title: "Login",
+            title: "",
             headerStyle: {
                 backgroundColor: "#18121E",
             },
