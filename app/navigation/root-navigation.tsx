@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 
 export default function RootNavigation() {
     return (
-        <NavigationNativeContainer theme={ naviTheme }>
+        <NavigationNativeContainer theme={ naviTheme } >
             <Stack.Navigator>
                 <Stack.Screen name="" component={ LoginScreen } />
             </Stack.Navigator>
@@ -21,7 +21,7 @@ const naviTheme = {
       primary: 'rgb(255, 45, 85)',
       background: 'rgb(242, 242, 242)',
       card: '#18121E',
-      text: 'rgb(28, 28, 30)',
+      text: '#EAC67A',
       border: 'rgb(199, 199, 204)',
     },
   };

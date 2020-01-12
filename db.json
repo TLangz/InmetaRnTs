@@ -1,0 +1,15 @@
+{
+  "todos": [
+    {
+      "title": "Plan course",
+      "description": "Plan SCRUM course for Inmeta",
+      "id": 1,
+      "finished": false
+    },
+    {
+      "title": "Copenhagen trip",
+      "description": "Meetings with Express Bank in Copenhagen",
+      "id": 2,
+      "finished": false    }
+  ]
+}
