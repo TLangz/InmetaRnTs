@@ -13,7 +13,7 @@ const LoginScreen: React.FC<any> = () => {
                 <Headline style={ styles.appTitle }>
                     Todo's
                 </Headline>
-                <Paragraph style={ styles.appDesc }>Keep track of your task's!</Paragraph>
+                <Paragraph style={ styles.appDesc }>Keep track of your tasks!</Paragraph>
             </View>
             <>
                 <View style={ styles.divider }></View>
