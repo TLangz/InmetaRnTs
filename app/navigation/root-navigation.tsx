@@ -9,8 +9,8 @@ const Stack = createStackNavigator();
 
 export default function RootNavigation() {
     return (
-        <NavigationNativeContainer theme={ theme } >
-            <Stack.Navigator>
+        <NavigationNativeContainer theme={ theme }>
+            <Stack.Navigator >
                 <Stack.Screen name="" component={ LoginScreen } />
                 <Stack.Screen name="todoListScreen" component={ TodoListScreen } options={{ title: "Todo's" }} />
             </Stack.Navigator>

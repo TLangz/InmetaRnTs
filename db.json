@@ -1,10 +1,16 @@
 {
   "todos": [
     {
-      "title": "Plan course",
-      "description": "Plan SCRUM course for Inmeta",
-      "id": "6575c4e9-2dde-4e2c-897a-7476edde78c0",
-      "finished": false
+      "title": "Todo 1",
+      "description": "New todo",
+      "finished": true,
+      "id": 1
+    },
+    {
+      "title": "Todo 2",
+      "description": "Second todo\n",
+      "finished": false,
+      "id": 2
     }
   ]
 }

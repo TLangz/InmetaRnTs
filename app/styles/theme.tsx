@@ -21,4 +21,3 @@ export const Inputheme = {
 };
 
 export const background = '#233237';
- 

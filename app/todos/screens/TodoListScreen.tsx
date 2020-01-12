@@ -12,7 +12,8 @@ import {
 } from 'react-native-paper';
 import { ITodoModel } from '../todo-model';
 import { getTodos } from '../todo-service';
-import TodoView from '../components/TodoView'
+import TodoView from '../components/TodoView';
+import Header from '../components/Header';
 
 
 const TodoListScreen: React.FC<void> = () => {
@@ -33,6 +34,17 @@ const TodoListScreen: React.FC<void> = () => {
 	const handleDeleteFromList = (value: string) => {
 		setTodos([...todos.filter(item => item.id !== value)])
 	}
+
+	const handleAddToList = (value: ITodoModel) => {
+        setTodos([...todos, value])
+	}
+	
+	const handleUpdateList = (value: ITodoModel) => {
+		const index = todos.findIndex(todo => todo.id === value.id);
+		let newTodos = todos;
+		newTodos[index] = value;
+		setTodos([...newTodos]);
+	}
 	  
 	useEffect(() => {
 		fetch();
@@ -47,9 +59,11 @@ const TodoListScreen: React.FC<void> = () => {
 		) : (
 			<View style={styles.base}>
 				<>
+					<Header updateList={handleAddToList} />
+                    <Divider />
 					{todos.map(t => (
 						<View key={t.id}>
-							<TodoView item={t} removeTodoFromList={ handleDeleteFromList }/>
+							<TodoView item={t} removeTodoFromList={ handleDeleteFromList } updateList={ handleUpdateList }/>
 						</View>
 					))}
 				</>

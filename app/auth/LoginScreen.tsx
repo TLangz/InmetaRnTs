@@ -7,7 +7,7 @@ const LoginScreen: React.FC<any> = (props) => {
     return (
         <View style={ styles.container } >
             <>
-            <StatusBar backgroundColor="#ffffff" />
+            <StatusBar backgroundColor="#18121E" />
             </>
             <View style={ styles.header }>
                 <Headline style={ styles.appTitle }>
