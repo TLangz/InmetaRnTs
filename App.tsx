@@ -18,6 +18,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import { theme } from './app/styles/theme';
 
 import {
   Header,

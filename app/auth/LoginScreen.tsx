@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar, Text, Alert, TouchableOpacity } from 'react-native';
 import { Button, Headline, Paragraph, TextInput, Snackbar, Portal } from 'react-native-paper';
-import { theme } from '../styles/theme';
+import { theme, background } from '../styles/theme';
 
 const LoginScreen: React.FC<any> = () => {
     return (
-        <View style={ styles.container }>
+        <View style={ styles.container } >
             <>
             <StatusBar backgroundColor="#ffffff" />
             </>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         paddingRight: 16,
         alignContent: 'center',
         justifyContent: 'center',
-        backgroundColor: '#233237',
+        backgroundColor: background,
     },
     divider: {
         height: 16,
