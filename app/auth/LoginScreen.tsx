@@ -17,11 +17,11 @@ const LoginScreen: React.FC<any> = (props) => {
             </View>
             <>
                 <View style={ styles.divider }></View>
-                <TextInput onChange={ () => {} } label="Username" theme={ theme }/>
+                <TextInput onChange={ () => {} } label="Username" theme={ theme } style={ styles.rounder }/>
             </>
             <>
                 <View style={ styles.divider }></View>
-                <TextInput onChange={ () => {} } label="Password" theme={ theme }secureTextEntry/>
+                <TextInput onChange={ () => {} } label="Password" theme={ theme }secureTextEntry style={ styles.rounder }/>
             </>
             <>
                 <View style={ styles.divider }></View>
@@ -75,6 +75,9 @@ const styles = StyleSheet.create({
     btn: {
         height: 50,
         paddingTop: 6,
+    },
+    rounder: {
+        borderRadius: 5
     }
 })
 
