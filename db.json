@@ -3,13 +3,13 @@
     {
       "title": "Plan course",
       "description": "Plan SCRUM course for Inmeta",
-      "id": 1,
+      "id": "6575c4e9-2dde-4e2c-897a-7476edde78c0",
       "finished": false
     },
     {
       "title": "Copenhagen trip",
       "description": "Meetings with Express Bank in Copenhagen",
-      "id": 2,
+      "id": "95617721-503a-4c4c-8f59-a1ba7fc87d65",
       "finished": false    }
   ]
 }
