@@ -3,7 +3,7 @@ import { View, StyleSheet, StatusBar, Text, Alert, TouchableOpacity } from 'reac
 import { Button, Headline, Paragraph, TextInput, Snackbar, Portal } from 'react-native-paper';
 import { theme, background } from '../styles/theme';
 
-const LoginScreen: React.FC<any> = () => {
+const LoginScreen: React.FC<any> = (props) => {
     return (
         <View style={ styles.container } >
             <>
@@ -27,7 +27,7 @@ const LoginScreen: React.FC<any> = () => {
                 <View style={ styles.divider }></View>
                 <Button disabled={ false }
                     style={ styles.btn } mode="contained"
-                    onPress={ () => { } } theme={ theme }>Login</Button>
+                    onPress={ () => { props.navigation.navigate('todoListScreen')} } theme={ theme }>Login</Button>
                 <View style={ styles.divider } />
                 <View style={ styles.divider } />
             </>
