@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar, Text, Alert, TouchableOpacity } from 'react-native';
 import { Button, Headline, Paragraph, TextInput, Snackbar, Portal } from 'react-native-paper';
+import { theme } from '../styles/theme';
 
 const LoginScreen: React.FC<any> = () => {
     return (
@@ -12,23 +13,23 @@ const LoginScreen: React.FC<any> = () => {
                 <Headline style={ styles.appTitle }>
                     Todo's
                 </Headline>
-                <Paragraph style={styles.appDesc}>Keep track of your task's!</Paragraph>
+                <Paragraph style={ styles.appDesc }>Keep track of your task's!</Paragraph>
             </View>
             <>
                 <View style={ styles.divider }></View>
-                <TextInput onChange={() => {}} label="Username" theme={ inputTheme }/>
+                <TextInput onChange={ () => {} } label="Username" theme={ theme }/>
             </>
             <>
                 <View style={ styles.divider }></View>
-                <TextInput onChange={() => {}} label="Password" theme={ inputTheme }secureTextEntry/>
+                <TextInput onChange={ () => {} } label="Password" theme={ theme }secureTextEntry/>
             </>
             <>
                 <View style={ styles.divider }></View>
-                <Button disabled={false}
-                    style={styles.btn} mode="contained"
-                    onPress={() => { }}>Login</Button>
-                <View style={styles.divider} />
-                <View style={styles.divider} />
+                <Button disabled={ false }
+                    style={ styles.btn } mode="contained"
+                    onPress={ () => { } } theme={ theme }>Login</Button>
+                <View style={ styles.divider } />
+                <View style={ styles.divider } />
             </>
             <>
                 <Portal>
@@ -74,20 +75,8 @@ const styles = StyleSheet.create({
     btn: {
         height: 50,
         paddingTop: 6,
-        backgroundColor: '#984B43',
     }
 })
-
-const inputTheme = {
-    dark: false,
-    colors: {
-      primary: '#984B43',
-      background: 'rgb(242, 242, 242)',
-      card: '#18121E',
-      text: '#000',
-      border: 'rgb(199, 199, 204)',
-    },
-  };
 
 const loginFunc = () => {
     Alert.alert("Logging in")
