@@ -2,7 +2,40 @@ import React from 'react';
 import { View, StyleSheet, StatusBar, Text, TextInput, Alert, TouchableOpacity } from 'react-native';
 import { Button } from 'react-native-paper';
 
-const Login = () => {
+/*
+class LoginScreen exstend React.COmponent {
+    state = {
+        firstName: 'default value
+    }
+
+    myFunction = () => {
+        this.SetState({firstName: "new value"})
+    }
+
+    componentDidMount() {
+        //HTTP REQUEST, loads before UI render
+    }
+
+    render() {
+        return (<View style={styles.container}>
+                <Button style={ styles.cameraButton } icon="camera" mode="contained" onPress={ loginFunc }>
+                    Authenticate
+                </Button>
+            </View>)
+    }
+
+}
+*/
+
+export default function LoginScreen() {
+    // const [firstName, setFirstName] = React.useState('default value)
+    // myFunction() {
+    //    setFirstName("secondary value")
+    //}
+    //
+    //React.UseEffect(() => {
+    // HTTP REQUEST, loads before UI render   
+    //});
     return (<View style={styles.container}>
                 <Button style={ styles.cameraButton } icon="camera" mode="contained" onPress={ loginFunc }>
                     Authenticate
@@ -63,5 +96,3 @@ const registerFunc = () => {
 const forgottenPassFunc = () => {
     Alert.alert("Retrieve password")
 }
-
-export default Login;

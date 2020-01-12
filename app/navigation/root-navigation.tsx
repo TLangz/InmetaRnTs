@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavigationNativeContainer, DefaultTheme } from '@react-navigation/native'
-import { createAppContainer } from 'react-navigation';
+import { NavigationNativeContainer } from '@react-navigation/native'
 import {  createStackNavigator } from '@react-navigation/stack';
-import Login from '../auth/Login';
+import LoginScreen from '../auth/LoginScreen';
 
 const Stack = createStackNavigator();
 
@@ -10,7 +9,7 @@ export default function RootNavigation() {
     return (
         <NavigationNativeContainer theme={ naviTheme }>
             <Stack.Navigator>
-                <Stack.Screen name="" component={ Login } />
+                <Stack.Screen name="" component={ LoginScreen } />
             </Stack.Navigator>
         </NavigationNativeContainer>
     );
