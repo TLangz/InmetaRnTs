@@ -8,6 +8,7 @@
  * @format
  */
 
+import 'react-native-gesture-handler';
 import React from 'react';
 import {
   SafeAreaView,
@@ -26,21 +27,16 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import RootNavigation from './app/navigation/root-navigation';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 declare var global: {HermesInternal: null | {}};
 
 const App = () => {
   return (
-    <>
-      <RootNavigation></RootNavigation>
-    </>
+    <PaperProvider>
+      <RootNavigation />
+    </PaperProvider>
   );
 };
-
-const myStyles = StyleSheet.create({
-  body: {
-    color: 'black'
-  }
-})
 
 export default App;

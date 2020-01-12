@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar, Text, TextInput, Alert, TouchableOpacity } from 'react-native';
+import { Button } from 'react-native-paper';
 
 const Login = () => {
     return (<View style={styles.container}>
-                <TextInput style={ styles.input } placeholder="Username"></TextInput>
+                {/* <TextInput style={ styles.input } placeholder="Username"></TextInput>
                 <TextInput style={ styles.input } placeholder="Password"></TextInput>
                 <View style={styles.login}>
                     <TouchableOpacity
@@ -15,7 +16,10 @@ const Login = () => {
                     </TouchableOpacity>
                 </View>
                 <Text onPress={ registerFunc } style={ styles.textButtons }>Sign Up</Text>
-                <Text onPress={ forgottenPassFunc } style={ styles.textButtons }>Retrieve Password</Text>
+                <Text onPress={ forgottenPassFunc } style={ styles.textButtons }>Retrieve Password</Text> */}
+                <Button style={ styles.cameraButton } icon="camera" mode="contained" onPress={ loginFunc }>
+                    Press me
+                </Button>
             </View>)
 };
 
@@ -54,6 +58,10 @@ const styles = StyleSheet.create({
     },
     textButtons: {
         color: '#EAC67A'
+    },
+    cameraButton: {
+        width: '80%',
+        backgroundColor: '#984B43',
     }
 })
 
