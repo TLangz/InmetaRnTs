@@ -6,22 +6,6 @@ import Login from '../auth/Login';
 
 const Stack = createStackNavigator();
 
-// const MainNavigator = createStackNavigator({
-//     login: {
-//         screen: Login,
-//         navigationOptions: {
-//             title: "",
-//             headerStyle: {
-//                 backgroundColor: "#18121E",
-//             },
-//             headerTitleStyle: {
-//                 color: "#984B43"
-//             }
-//         }
-//     },
-
-// }, { initialRouteName: 'login' })
-
 export default function RootNavigation() {
     return (
         <NavigationNativeContainer theme={ naviTheme }>

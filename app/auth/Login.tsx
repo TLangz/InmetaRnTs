@@ -4,21 +4,8 @@ import { Button } from 'react-native-paper';
 
 const Login = () => {
     return (<View style={styles.container}>
-                {/* <TextInput style={ styles.input } placeholder="Username"></TextInput>
-                <TextInput style={ styles.input } placeholder="Password"></TextInput>
-                <View style={styles.login}>
-                    <TouchableOpacity
-                        style={ styles.loginButton }
-                        activeOpacity = { .5 }
-                        onPress={ loginFunc }
-                    >
-                            <Text style={ styles.loginText }> Enter </Text>
-                    </TouchableOpacity>
-                </View>
-                <Text onPress={ registerFunc } style={ styles.textButtons }>Sign Up</Text>
-                <Text onPress={ forgottenPassFunc } style={ styles.textButtons }>Retrieve Password</Text> */}
                 <Button style={ styles.cameraButton } icon="camera" mode="contained" onPress={ loginFunc }>
-                    Press me
+                    Authenticate
                 </Button>
             </View>)
 };
