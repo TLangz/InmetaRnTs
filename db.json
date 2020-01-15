@@ -3,14 +3,20 @@
     {
       "title": "Todo 1",
       "description": "New todo",
-      "finished": true,
-      "id": 1
+      "id": 1,
+      "finished": false
     },
     {
       "title": "Todo 2",
       "description": "Second todo\n",
       "finished": false,
       "id": 2
+    },
+    {
+      "title": "SomeTitle",
+      "description": "SomeDescription",
+      "id": 3,
+      "finished": true
     }
   ]
 }
